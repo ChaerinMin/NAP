@@ -1,6 +1,8 @@
-conda remove -n nap-gcc9 --all -y
-conda create -n nap-gcc9 gcc_linux-64=9 gxx_linux-64=9 python=3.9 -y
-source activate nap-gcc9
+set -e
+
+conda remove -n general --all -y
+conda create -n general gcc_linux-64=9 gxx_linux-64=9 python=3.9 -y
+conda activate general
 
 which python
 which pip
